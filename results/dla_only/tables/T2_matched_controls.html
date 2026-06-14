@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Table 2 – Matched Controls Summary</title>
+  <style>
+  /* Cap body width so tables don't balloon on wide monitors. A long note
+     in a tfoot colspan cell would otherwise pull the table out to fill the
+     viewport's max-content. Centered for readability when rendered alone. */
+  body { font-family: "Times New Roman", Times, serif; margin: 24px auto;
+         max-width: 900px; color: #222; }
+  table.thesis { border-collapse: collapse; margin: 16px 0; font-size: 14px;
+                 font-family: "Times New Roman", Times, serif;
+                 max-width: 100%; }
+  table.thesis caption { caption-side: top; text-align: left; font-weight: 600; padding: 6px 0; }
+  table.thesis th, table.thesis td { padding: 6px 12px; text-align: left; }
+  /* Centered group headers (column-spanning cells). Without this, a colspan
+     `class="num"` th aligns right and looks bizarre over its child columns. */
+  table.thesis th[colspan] { text-align: center; }
+  table.thesis thead th { border-bottom: 2px solid #444; }
+  table.thesis tbody td { border-bottom: 1px solid #e0e0e0; }
+  table.thesis tbody tr:last-child td { border-bottom: 2px solid #444; }
+  table.thesis td.num, table.thesis th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  /* Note lives in <tfoot> so its width naturally matches the table. Suppress
+     the default cell borders that would otherwise put a thin rule above it. */
+  table.thesis tfoot td.note { font-size: 12px; color: #555; padding-top: 8px;
+                               text-align: left; border-bottom: none !important;
+                               font-family: "Times New Roman", Times, serif; }
+  table.thesis tfoot tr td.note { border-top: none; }
+</style>
+</head>
+<body>
+<table class="thesis">
+  <caption>Table 2. Matched Controls: ATT by Outcome and Post-Period Window, Main Matching vs. Same-FSG Sensitivity</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Outcome</th>
+      <th rowspan="2">Post window</th>
+      <th rowspan="2" class="num">N</th>
+      <th class="num">Main matching</th>
+      <th class="num">Same-FSG sensitivity</th>
+    </tr>
+    <tr>
+      <th class="num"><span style="font-weight:normal;color:#555">ATT (SE)</span></th>
+      <th class="num"><span style="font-weight:normal;color:#555">ATT (SE)</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Domestic sourcing share</td>
+      <td>event year ≥ 0</td>
+      <td class="num">23</td>
+      <td class="num">-0.460***<br><span style="color:#888;font-size:11px">(0.074)</span></td>
+      <td class="num">-0.371***<br><span style="color:#888;font-size:11px">(0.076)</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>event year ≥ 2</td>
+      <td class="num">13</td>
+      <td class="num">-0.308**<br><span style="color:#888;font-size:11px">(0.129)</span></td>
+      <td class="num">-0.328**<br><span style="color:#888;font-size:11px">(0.111)</span></td>
+    </tr>
+    <tr>
+      <td>Maximum logged unit price</td>
+      <td>event year ≥ 0</td>
+      <td class="num">23</td>
+      <td class="num">-0.133**<br><span style="color:#888;font-size:11px">(0.052)</span></td>
+      <td class="num">-0.190***<br><span style="color:#888;font-size:11px">(0.048)</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>event year ≥ 2</td>
+      <td class="num">13</td>
+      <td class="num">-0.198**<br><span style="color:#888;font-size:11px">(0.068)</span></td>
+      <td class="num">-0.251***<br><span style="color:#888;font-size:11px">(0.047)</span></td>
+    </tr>
+    <tr>
+      <td>Mean offers</td>
+      <td>event year ≥ 0</td>
+      <td class="num">23</td>
+      <td class="num">-0.367<br><span style="color:#888;font-size:11px">(0.839)</span></td>
+      <td class="num">-0.116<br><span style="color:#888;font-size:11px">(0.751)</span></td>
+    </tr>
+    <tr style="background:#fff7e0">
+      <td></td>
+      <td>event year ≥ 2</td>
+      <td class="num">12</td>
+      <td class="num">-0.658<br><span style="color:#888;font-size:11px">(0.504)</span></td>
+      <td class="num">+0.119<br><span style="color:#888;font-size:11px">(0.335)</span></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="5" class="note">ATT is the mean of the per-NSN τᵢ, with HC1 (heteroskedasticity-robust) standard errors. <i>Main matching</i> picks the three nearest donors by Mahalanobis distance from the full eligible pool. <i>Same-FSG sensitivity</i> adds an exact-match constraint requiring each donor to share the treated NSN's two-digit Federal Supply Group (the first two digits of the four-digit FSC code). Significance: *** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10.</td></tr>
+  </tfoot>
+</table>
+</body>
+</html>

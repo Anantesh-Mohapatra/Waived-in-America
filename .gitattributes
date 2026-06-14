@@ -1,0 +1,6 @@
+# Byte fidelity everywhere: verification compares regenerated outputs against
+# committed bytes, so git must never rewrite line endings.
+* -text
+
+# Generated HTML table fragments: keep them out of the GitHub language stats
+*.html linguist-detectable=false

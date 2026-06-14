@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Appendix Table A – Domestic Sourcing Share (full ladder)</title>
+  <style>
+  /* Cap body width so tables don't balloon on wide monitors. A long note
+     in a tfoot colspan cell would otherwise pull the table out to fill the
+     viewport's max-content. Centered for readability when rendered alone. */
+  body { font-family: "Times New Roman", Times, serif; margin: 24px auto;
+         max-width: 900px; color: #222; }
+  table.thesis { border-collapse: collapse; margin: 16px 0; font-size: 14px;
+                 font-family: "Times New Roman", Times, serif;
+                 max-width: 100%; }
+  table.thesis caption { caption-side: top; text-align: left; font-weight: 600; padding: 6px 0; }
+  table.thesis th, table.thesis td { padding: 6px 12px; text-align: left; }
+  /* Centered group headers (column-spanning cells). Without this, a colspan
+     `class="num"` th aligns right and looks bizarre over its child columns. */
+  table.thesis th[colspan] { text-align: center; }
+  table.thesis thead th { border-bottom: 2px solid #444; }
+  table.thesis tbody td { border-bottom: 1px solid #e0e0e0; }
+  table.thesis tbody tr:last-child td { border-bottom: 2px solid #444; }
+  table.thesis td.num, table.thesis th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  /* Note lives in <tfoot> so its width naturally matches the table. Suppress
+     the default cell borders that would otherwise put a thin rule above it. */
+  table.thesis tfoot td.note { font-size: 12px; color: #555; padding-top: 8px;
+                               text-align: left; border-bottom: none !important;
+                               font-family: "Times New Roman", Times, serif; }
+  table.thesis tfoot tr td.note { border-top: none; }
+</style>
+</head>
+<body>
+<table class="thesis">
+  <caption>Appendix Table A. Event Study Specification Ladder: Domestic Sourcing Share</caption>
+  <thead>
+    <tr>
+      <th>Event year</th>
+      <th class="num">(1) OLS</th>
+      <th class="num">(2) +NSN FE</th>
+      <th class="num">(3) +NSN+FY FE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><i>k = -8</i></td><td class="num">+0.704***<br><span style="color:#888;font-size:11px">(0.071)</span></td><td class="num">+0.866***<br><span style="color:#888;font-size:11px">(0.057)</span></td><td class="num">+0.835***<br><span style="color:#888;font-size:11px">(0.057)</span></td></tr>
+    <tr><td><i>k = -7</i></td><td class="num">+0.685***<br><span style="color:#888;font-size:11px">(0.072)</span></td><td class="num">+0.772***<br><span style="color:#888;font-size:11px">(0.078)</span></td><td class="num">+0.744***<br><span style="color:#888;font-size:11px">(0.078)</span></td></tr>
+    <tr><td><i>k = -6</i></td><td class="num">+0.667***<br><span style="color:#888;font-size:11px">(0.074)</span></td><td class="num">+0.667***<br><span style="color:#888;font-size:11px">(0.071)</span></td><td class="num">+0.643***<br><span style="color:#888;font-size:11px">(0.071)</span></td></tr>
+    <tr><td><i>k = -5</i></td><td class="num">+0.561***<br><span style="color:#888;font-size:11px">(0.065)</span></td><td class="num">+0.552***<br><span style="color:#888;font-size:11px">(0.055)</span></td><td class="num">+0.535***<br><span style="color:#888;font-size:11px">(0.055)</span></td></tr>
+    <tr><td><i>k = -4</i></td><td class="num">+0.394***<br><span style="color:#888;font-size:11px">(0.114)</span></td><td class="num">+0.399***<br><span style="color:#888;font-size:11px">(0.107)</span></td><td class="num">+0.388***<br><span style="color:#888;font-size:11px">(0.107)</span></td></tr>
+    <tr><td><i>k = -3</i></td><td class="num">+0.173**<br><span style="color:#888;font-size:11px">(0.088)</span></td><td class="num">+0.167**<br><span style="color:#888;font-size:11px">(0.082)</span></td><td class="num">+0.164**<br><span style="color:#888;font-size:11px">(0.082)</span></td></tr>
+    <tr><td><i>k = -2</i></td><td class="num">+0.192**<br><span style="color:#888;font-size:11px">(0.098)</span></td><td class="num">+0.169*<br><span style="color:#888;font-size:11px">(0.099)</span></td><td class="num">+0.168*<br><span style="color:#888;font-size:11px">(0.099)</span></td></tr>
+    <tr><td><i>k = -1</i></td><td class="num" colspan="3"><i>reference</i></td></tr>
+    <tr><td><i>k = +0</i></td><td class="num">-0.266***<br><span style="color:#888;font-size:11px">(0.073)</span></td><td class="num">-0.260***<br><span style="color:#888;font-size:11px">(0.072)</span></td><td class="num">-0.259***<br><span style="color:#888;font-size:11px">(0.072)</span></td></tr>
+    <tr><td><i>k = +1</i></td><td class="num">-0.223***<br><span style="color:#888;font-size:11px">(0.076)</span></td><td class="num">-0.230***<br><span style="color:#888;font-size:11px">(0.068)</span></td><td class="num">-0.227***<br><span style="color:#888;font-size:11px">(0.069)</span></td></tr>
+    <tr><td><i>k = +2</i></td><td class="num">-0.228**<br><span style="color:#888;font-size:11px">(0.093)</span></td><td class="num">-0.264***<br><span style="color:#888;font-size:11px">(0.091)</span></td><td class="num">-0.257***<br><span style="color:#888;font-size:11px">(0.091)</span></td></tr>
+    <tr><td><i>k = +3</i></td><td class="num">-0.202**<br><span style="color:#888;font-size:11px">(0.079)</span></td><td class="num">-0.320***<br><span style="color:#888;font-size:11px">(0.067)</span></td><td class="num">-0.310***<br><span style="color:#888;font-size:11px">(0.067)</span></td></tr>
+    <tr style="border-top:1px solid #888"><td>NSN FE</td><td class="num">—</td><td class="num">✓</td><td class="num">✓</td></tr>
+    <tr><td>FY FE</td><td class="num">—</td><td class="num">—</td><td class="num">✓</td></tr>
+    <tr style="border-top:1px solid #888"><td>Joint pre-trend p</td><td class="num">0.000***</td><td class="num">0.000***</td><td class="num">0.000***</td></tr>
+    <tr><td>Avg post β (k ≥ 0)</td><td class="num">-0.229***<br><span style="color:#888;font-size:11px">(0.075)</span></td><td class="num">-0.269***<br><span style="color:#888;font-size:11px">(0.067)</span></td><td class="num">-0.263***<br><span style="color:#888;font-size:11px">(0.067)</span></td></tr>
+    <tr style="border-top:1px solid #888"><td>N obs</td><td class="num">1,468,660</td><td class="num">1,468,660</td><td class="num">1,468,660</td></tr>
+    <tr><td>R²</td><td class="num">0.001</td><td class="num">0.674</td><td class="num">0.676</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="4" class="note">Coefficients on event-year dummies. Standard errors in parentheses, clustered on NSN. Reference event year is k = -1. Joint pre-trend p is the Wald F-test that all pre-treatment dummies are zero. Avg post β is the linear combination of post-period coefficients (k ≥ 0) with its CRV1 standard error. Specification (3), with NSN and FY fixed effects, is the one reported in the main Analysis section. Significance: *** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10.</td></tr>
+  </tfoot>
+</table>
+</body>
+</html>

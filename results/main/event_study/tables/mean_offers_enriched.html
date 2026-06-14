@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'>
+<style>
+:root {
+  --rule-thick: #000;
+  --rule-thin: #666;
+  --rule-section: #999;
+  --text: #111;
+  --muted: #555;
+  --se: #555;
+}
+html, body { background: #fff; color: var(--text); margin: 0; }
+body {
+  font-family: 'Charter', 'Iowan Old Style', 'Cambria', 'Georgia',
+               'Times New Roman', serif;
+  padding: 36px 40px;
+  font-feature-settings: 'tnum' 1, 'lnum' 1;  /* tabular, lining numerals */
+}
+.title { font-size: 15pt; font-weight: 600; margin: 0 0 4px 0; letter-spacing: 0.01em; }
+.subtitle {
+  font-size: 10pt; color: var(--muted); font-style: italic;
+  margin: 0 0 18px 0; max-width: 760px;
+}
+table.es {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  font-size: 11pt;
+  border-top: 2px solid var(--rule-thick);
+  border-bottom: 2px solid var(--rule-thick);
+}
+table.es thead tr.h-num th { padding: 6px 22px 1px; font-weight: 400; }
+table.es thead tr.h-desc th {
+  padding: 1px 22px 6px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule-thick);
+}
+table.es thead tr.h-only th {
+  padding: 6px 22px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule-thick);
+}
+table.es th.row { text-align: left; padding-left: 0; padding-right: 26px; }
+table.es th { text-align: center; }
+table.es td {
+  padding: 1px 22px;
+  text-align: center;
+  vertical-align: top;
+  border: none;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+table.es td.row {
+  text-align: left; padding-left: 0; padding-right: 26px;
+  white-space: nowrap;
+}
+table.es tr.coefrow td.b, table.es tr.coefrow td.row {
+  padding-top: 5px;       /* breathing room above each coef pair */
+}
+table.es tr.coefrow td .b  { display: block; line-height: 1.18; }
+table.es tr.coefrow td .se { display: block; color: var(--se);
+                              font-size: 0.88em; line-height: 1.18;
+                              padding-bottom: 4px; }
+/* Section separator: a thin rule above the first row of each new section. */
+table.es tr.sep td, table.es tr.sep th {
+  border-top: 1px solid var(--rule-section);
+  padding-top: 6px;
+}
+table.es td.ref { color: var(--muted); font-style: italic; }
+table.es td.dropped { color: var(--muted); font-style: italic; font-size: 0.95em; }
+.notes {
+  font-size: 9.5pt; color: var(--muted); margin: 14px 0 0 0;
+  max-width: 760px; line-height: 1.5; font-style: italic;
+}
+.notes b { font-weight: 600; font-style: normal; color: var(--text); }
+.notes code { font-style: normal; font-family: 'SF Mono', 'Consolas',
+                                                'Liberation Mono', monospace;
+              font-size: 0.92em; }
+</style>
+<title>mean offers - Enriched</title></head><body><div class='title'>mean offers - Enriched</div><div class='subtitle'>TWFE event study, ref k=-1. NSN-clustered SEs (CRV1). Stars: *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1.</div><table class='es'><thead><tr class='h-num'><th class='row'></th><th>(1)</th><th>(2)</th><th>(3)</th><th>(4)</th></tr><tr class='h-desc'><th class='row'></th><th>OLS</th><th>+NSN FE</th><th>+FY FE</th><th>+Controls</th></tr></thead><tbody><tr class='coefrow'><td class='row'>k=-8</td><td><span class='b'>-0.082</span><span class='se'>(0.446)</span></td><td><span class='b'>0.214</span><span class='se'>(0.317)</span></td><td><span class='b'>-1.897***</span><span class='se'>(0.316)</span></td><td><span class='b'>-1.855***</span><span class='se'>(0.318)</span></td></tr><tr class='coefrow'><td class='row'>k=-7</td><td><span class='b'>0.685</span><span class='se'>(1.166)</span></td><td><span class='b'>-0.489*</span><span class='se'>(0.273)</span></td><td><span class='b'>-2.424***</span><span class='se'>(0.276)</span></td><td><span class='b'>-2.379***</span><span class='se'>(0.277)</span></td></tr><tr class='coefrow'><td class='row'>k=-6</td><td><span class='b'>1.775</span><span class='se'>(1.251)</span></td><td><span class='b'>0.671</span><span class='se'>(0.504)</span></td><td><span class='b'>-0.867*</span><span class='se'>(0.491)</span></td><td><span class='b'>-0.731</span><span class='se'>(0.534)</span></td></tr><tr class='coefrow'><td class='row'>k=-5</td><td><span class='b'>1.700</span><span class='se'>(1.576)</span></td><td><span class='b'>0.708</span><span class='se'>(1.237)</span></td><td><span class='b'>-0.262</span><span class='se'>(1.239)</span></td><td><span class='b'>-0.192</span><span class='se'>(1.197)</span></td></tr><tr class='coefrow'><td class='row'>k=-4</td><td><span class='b'>0.190</span><span class='se'>(0.614)</span></td><td><span class='b'>-0.660</span><span class='se'>(0.590)</span></td><td><span class='b'>-1.032*</span><span class='se'>(0.596)</span></td><td><span class='b'>-0.942*</span><span class='se'>(0.568)</span></td></tr><tr class='coefrow'><td class='row'>k=-3</td><td><span class='b'>1.012</span><span class='se'>(0.736)</span></td><td><span class='b'>0.091</span><span class='se'>(0.200)</span></td><td><span class='b'>-0.212</span><span class='se'>(0.201)</span></td><td><span class='b'>-0.182</span><span class='se'>(0.201)</span></td></tr><tr class='coefrow'><td class='row'>k=-2</td><td><span class='b'>0.275</span><span class='se'>(0.616)</span></td><td><span class='b'>-0.473*</span><span class='se'>(0.284)</span></td><td><span class='b'>-0.659**</span><span class='se'>(0.281)</span></td><td><span class='b'>-0.655**</span><span class='se'>(0.279)</span></td></tr><tr class='coefrow'><td class='row'>k=-1</td><td><span class='b'>—</span><span class='se'>(ref.)</span></td><td><span class='b'>—</span><span class='se'>(ref.)</span></td><td><span class='b'>—</span><span class='se'>(ref.)</span></td><td><span class='b'>—</span><span class='se'>(ref.)</span></td></tr><tr class='coefrow'><td class='row'>k=0</td><td><span class='b'>0.128</span><span class='se'>(0.532)</span></td><td><span class='b'>-0.875</span><span class='se'>(0.711)</span></td><td><span class='b'>-0.791</span><span class='se'>(0.703)</span></td><td><span class='b'>-0.791</span><span class='se'>(0.702)</span></td></tr><tr class='coefrow'><td class='row'>k=+1</td><td><span class='b'>-0.081</span><span class='se'>(0.524)</span></td><td><span class='b'>-0.760*</span><span class='se'>(0.407)</span></td><td><span class='b'>-0.688*</span><span class='se'>(0.394)</span></td><td><span class='b'>-0.692*</span><span class='se'>(0.392)</span></td></tr><tr class='coefrow'><td class='row'>k=+2</td><td><span class='b'>0.286</span><span class='se'>(0.656)</span></td><td><span class='b'>-0.602*</span><span class='se'>(0.345)</span></td><td><span class='b'>-0.534*</span><span class='se'>(0.323)</span></td><td><span class='b'>-0.553*</span><span class='se'>(0.320)</span></td></tr><tr class='coefrow'><td class='row'>k=+3</td><td><span class='b'>0.546</span><span class='se'>(0.493)</span></td><td><span class='b'>-0.307</span><span class='se'>(0.863)</span></td><td><span class='b'>-0.237</span><span class='se'>(0.805)</span></td><td><span class='b'>-0.236</span><span class='se'>(0.805)</span></td></tr><tr class='coefrow sep'><td class='row'>competitive_share</td><td></td><td></td><td></td><td><span class='b'>2.597***</span><span class='se'>(0.018)</span></td></tr><tr class='coefrow'><td class='row'>sole_source_share</td><td></td><td></td><td></td><td><span class='dropped'>(collinear, dropped)</span></td></tr><tr class='sep'><td class='row'>NSN FE</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td class='row'>FY FE</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr class='coefrow sep'><td class='row'>Pre-trend p (joint, k<-1 = 0)</td><td>0.067*</td><td>0.000***</td><td>0.000***</td><td>0.000***</td></tr><tr class='coefrow'><td class='row'>Avg post beta (k>=0)</td><td><span class='b'>0.220</span><span class='se'>(0.458)</span></td><td><span class='b'>-0.636</span><span class='se'>(0.454)</span></td><td><span class='b'>-0.562</span><span class='se'>(0.432)</span></td><td><span class='b'>-0.568</span><span class='se'>(0.431)</span></td></tr><tr class='sep'><td class='row'>N obs</td><td>1,120,312</td><td>1,120,312</td><td>1,120,312</td><td>1,120,312</td></tr><tr><td class='row'>N clusters (NSN)</td><td>320,665</td><td>320,665</td><td>320,665</td><td>320,665</td></tr><tr><td class='row'>R-squared</td><td>0.000</td><td>0.553</td><td>0.570</td><td>0.578</td></tr></tbody></table><div class='notes'><b>Notes.</b> Coefficients are event-time dummies on the (NSN, FY, event_year) cell panel. The reference period is k=-1 (year before the first waiver). Endpoint coefficients (k=-8..-5, k=+3) are identified off &le;9 NSNs each. <b>Pre-trend p (joint)</b> is the Wald F-test that &beta;<sub>k</sub>=0 jointly for k&lt;-1. <b>Avg post &beta; (k&ge;0)</b> is the linear combination of post-period coefficients with CRV1 standard error. Spec (4) was specified with both <code>competitive_share</code> and <code>sole_source_share</code>; pyfixest dropped <code>sole_source_share</code> for perfect collinearity (within-NSN-and-FY the cell shares of competition codes effectively sum to a constant).</div></body></html>

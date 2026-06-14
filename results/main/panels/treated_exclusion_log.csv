@@ -1,0 +1,3 @@
+nsn,panel_label,reason,n_cells_total,event_years_observed
+6695012662248,dla_only,"no observation in event_year [-5, -1]",3,"-8,-7,0"
+6695012662248,enriched,"no observation in event_year [-5, -1]",3,"-8,-7,0"

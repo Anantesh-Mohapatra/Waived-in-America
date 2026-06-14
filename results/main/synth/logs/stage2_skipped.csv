@@ -1,0 +1,18 @@
+treated_nsn,outcome,n_treated_eys,reason
+1660016004909,max_log_unit_price,2,T0=1 pre-EYs < MIN_PRE_EYS=3
+1660016004909,mean_offers,2,T0=1 pre-EYs < MIN_PRE_EYS=3
+1660016004909,domestic_share,2,T0=1 pre-EYs < MIN_PRE_EYS=3
+1680016229189,max_log_unit_price,0,treated has no observed EYs for this outcome
+1680016229189,mean_offers,2,T0=1 pre-EYs < MIN_PRE_EYS=3
+2895145543146,max_log_unit_price,3,T0=2 pre-EYs < MIN_PRE_EYS=3
+2895145543146,mean_offers,3,T0=2 pre-EYs < MIN_PRE_EYS=3
+2895145543146,domestic_share,3,T0=2 pre-EYs < MIN_PRE_EYS=3
+6695012662248,max_log_unit_price,1,"treated has no pre-period observation in EY [-5,-1]"
+6695012662248,mean_offers,1,"treated has no pre-period observation in EY [-5,-1]"
+6695012662248,domestic_share,1,"treated has no pre-period observation in EY [-5,-1]"
+8150014912727,max_log_unit_price,4,T0=2 pre-EYs < MIN_PRE_EYS=3
+8150014912727,mean_offers,4,T0=2 pre-EYs < MIN_PRE_EYS=3
+8150014912727,domestic_share,4,T0=2 pre-EYs < MIN_PRE_EYS=3
+8150015737424,max_log_unit_price,3,T0=2 pre-EYs < MIN_PRE_EYS=3
+8150015737424,mean_offers,3,T0=2 pre-EYs < MIN_PRE_EYS=3
+8150015737424,domestic_share,3,T0=2 pre-EYs < MIN_PRE_EYS=3
