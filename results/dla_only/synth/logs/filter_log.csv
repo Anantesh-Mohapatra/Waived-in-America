@@ -1,0 +1,7 @@
+ts,stage,n_in,n_out,n_dropped,pct_dropped,reason
+2026-06-09T14:37:27,00_start,947481,947481,0,0.0,all NSNs in panel_enriched.parquet
+2026-06-09T14:37:27,01_drop_treated,947481,947456,25,0.003,drop the 28 treated NSNs
+2026-06-09T14:37:28,02_drop_waiver_reference,947456,947454,2,0.0,drop 37 NSNs in waiver_nsn_reference.csv (9 not already in treated set; 2 were in panel)
+2026-06-09T14:37:29,03_fy_ge_2022,947454,517172,430282,45.415,NSN must have >=1 cell with fy >= 2022
+2026-06-09T14:37:30,04_min_obs_per_nsn_union,517172,372288,144884,28.015,NSN must have >=2 non-null cells in >=1 outcome (union)
+2026-06-09T14:37:30,05_waiver_text_regex,372288,372288,0,0.0,drop NSNs whose dashed or 13-digit form appears in any waiver text field

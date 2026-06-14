@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Table 2 – Event Study Summary</title>
+  <style>
+  /* Cap body width so tables don't balloon on wide monitors. A long note
+     in a tfoot colspan cell would otherwise pull the table out to fill the
+     viewport's max-content. Centered for readability when rendered alone. */
+  body { font-family: "Times New Roman", Times, serif; margin: 24px auto;
+         max-width: 900px; color: #222; }
+  table.thesis { border-collapse: collapse; margin: 16px 0; font-size: 14px;
+                 font-family: "Times New Roman", Times, serif;
+                 max-width: 100%; }
+  table.thesis caption { caption-side: top; text-align: left; font-weight: 600; padding: 6px 0; }
+  table.thesis th, table.thesis td { padding: 6px 12px; text-align: left; }
+  /* Centered group headers (column-spanning cells). Without this, a colspan
+     `class="num"` th aligns right and looks bizarre over its child columns. */
+  table.thesis th[colspan] { text-align: center; }
+  table.thesis thead th { border-bottom: 2px solid #444; }
+  table.thesis tbody td { border-bottom: 1px solid #e0e0e0; }
+  table.thesis tbody tr:last-child td { border-bottom: 2px solid #444; }
+  table.thesis td.num, table.thesis th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  /* Note lives in <tfoot> so its width naturally matches the table. Suppress
+     the default cell borders that would otherwise put a thin rule above it. */
+  table.thesis tfoot td.note { font-size: 12px; color: #555; padding-top: 8px;
+                               text-align: left; border-bottom: none !important;
+                               font-family: "Times New Roman", Times, serif; }
+  table.thesis tfoot tr td.note { border-top: none; }
+</style>
+</head>
+<body>
+<table class="thesis">
+  <caption>Table 2. Event Study Results by Outcome</caption>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th class="num">Avg post-period β</th>
+      <th class="num">SE</th>
+      <th class="num">Joint pre-trend p</th>
+      <th class="num">N obs</th>
+      <th class="num">N NSN clusters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Domestic sourcing share</td>
+      <td class="num">-0.289</td>
+      <td class="num">0.072</td>
+      <td class="num">< 0.001</td>
+      <td class="num">1,468,642</td>
+      <td class="num">364,212</td>
+    </tr>
+    <tr>
+      <td>Maximum logged unit price</td>
+      <td class="num">-0.183</td>
+      <td class="num">0.060</td>
+      <td class="num">0.367</td>
+      <td class="num">1,468,423</td>
+      <td class="num">364,173</td>
+    </tr>
+    <tr>
+      <td>Mean offers</td>
+      <td class="num">-0.122</td>
+      <td class="num">0.253</td>
+      <td class="num">< 0.001</td>
+      <td class="num">1,120,276</td>
+      <td class="num">320,661</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="6" class="note">Avg post-period β is the linear combination of event-year coefficients at event year ≥ 0. Joint pre-trend p is the F-test for the pre-period event-year dummies being jointly zero. Specification: NSN and FY fixed effects, CRV1 standard errors clustered on NSN. Full event-time coefficient paths are in Figures F6-F8.</td></tr>
+  </tfoot>
+</table>
+</body>
+</html>

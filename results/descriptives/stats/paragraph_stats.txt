@@ -1,0 +1,20 @@
+=== Panel Overview paragraph stats — generated 2026-06-13 17:23:26 ===
+
+# Treatment panel
+NSNs:                27
+  Containers (8150): 21
+  Non-containers:    6
+Cells:               294
+Transactions:        2,210
+FY range:            2017 - 2026
+Event-year range:    -8 - 3
+
+# Comparison universe
+Full DLA universe NSNs:            947,484
+Filtered comparison subset NSNs:   372,288
+  Filter drops:                    575,196 (60.7%)
+
+# Transaction totals
+Full DLA universe transactions:            9,013,134
+Filtered comparison subset transactions:   7,639,316
+Treatment panel transactions:              2,210

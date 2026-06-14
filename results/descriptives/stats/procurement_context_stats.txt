@@ -1,0 +1,25 @@
+=== Procurement in Context (OQ3) paragraph stats - generated 2026-06-10 20:01:15 ===
+Cutoff: action_date <= 2026-01-31
+Source: data/clean/procurement_data.parquet
+
+# Federal-wide totals (FY2017 - Jan 2026, post-C-filter)
+Transactions:                 37,689,796
+Dollar obligations:               $2.15T
+  Domestic (D):               36,694,241 (97.36% of mfg-coded)
+  Nonavailability (J):           132,159 (0.35% of mfg-coded)
+  Foreign (non-D):               995,555 (2.64% of mfg-coded)
+  Domestic $:                     $2.06T (95.86% of mfg-coded $)
+  Nonavail $:                    $12.75B (0.59% of mfg-coded $)
+
+# DLA-specific totals (awarding_sub_agency_name == 'Defense Logistics Agency')
+Transactions:                 24,857,942
+Dollar obligations:             $357.49B
+  Domestic (D):               24,359,548 (98.00% of DLA mfg-coded)
+  Nonavailability (J):            22,845 (0.09% of DLA mfg-coded)
+  Foreign (non-D):               498,394 (2.00% of DLA mfg-coded)
+  Domestic $:                   $319.25B (89.30% of DLA mfg-coded $)
+  Nonavail $:                   $578.50M (0.16% of DLA mfg-coded $)
+
+# DLA share of federal-wide totals
+DLA transaction share:   65.95%
+DLA dollar share:        16.61%

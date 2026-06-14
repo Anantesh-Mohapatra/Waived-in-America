@@ -1,0 +1,26 @@
+[project]
+name = "waived-in-america"
+version = "1.0.0"
+description = "Replication package for 'Waived in America': Buy American Act waivers and U.S. federal procurement outcomes"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "joblib>=1.5.3",
+    "jupytext>=1.19.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+    "pandas>=2.3.3",
+    "polars>=1.35.2",
+    "pyarrow>=22.0.0",
+    "pyfixest>=0.50.1",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupytext>=1.19.1",
+    "notebook>=7.5.3",
+]

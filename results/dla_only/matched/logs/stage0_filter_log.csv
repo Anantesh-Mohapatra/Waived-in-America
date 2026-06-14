@@ -1,0 +1,5 @@
+ts,stage,n_in,n_out,n_dropped,pct_dropped,reason
+2026-06-09T14:35:27,dla_action_date_cutoff,DLA full (~13.5M),13378829,,,keep action_date <= 2026-01-31
+2026-06-09T14:35:27,dla_drop_null_date_or_nsn,13378829,13378829,0,0.0,drop rows with null AWARD_DATE or NSN
+2026-06-09T14:35:33,dla_safe_dedup,13378829,9011563,4367266,32.6431,"safe-dedup on ['NSN', 'BASE_PIID', 'mod_n', 'line_n', 'AWARD_DATE']; 458 anomalous groups left un-deduped"
+2026-06-09T14:35:35,dla_filter_to_universe,9011563,7639980,1371583,15.2203,"keep rows for 372,316 NSNs (treated + donors)"

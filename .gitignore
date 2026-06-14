@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Raw data: keep the committed exports + waiver portal CSV; bulk snapshots stay local
+raw_data/*
+!raw_data/bidlink/
+!raw_data/bidlink/**
+!raw_data/procurement-waivers.csv
+
+# Pipeline-regenerated data (caches, synth checkpoints, intermediates)
+data/
+
+# Regenerated event-study coefficients (rebuilt before any artifact stage; not byte-stable)
+results/*/event_study/event_study.json
+
+# Thesis build intermediates (final PDF is committed at the repo root)
+thesis/build/
+thesis/output/
+thesis/preamble.tex
+thesis/titlepage.tex
+
+# Local-only working files
+_RELEASE_ROADMAP.md
+preflight_report.md
+run_log.csv
